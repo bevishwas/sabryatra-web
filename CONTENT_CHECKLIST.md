@@ -7,8 +7,12 @@ Use this checklist before pointing `sabryatra.com` DNS to Vercel.
 - [ ] **Sanity CMS connected** — env vars set, `/studio` loads, CORS added for localhost + production
 - [ ] **Re-seed or edit in Studio** — run `npm run seed:sanity` once, then replace placeholders in `/studio`
 - [ ] **Replace placeholder photos** — hero, card, and gallery images for every journey; descriptive filenames + alt text
-- [ ] **Maa Nanda Devi copy** — review journey body and logistics fields in Sanity
-- [ ] **Real testimonials** — 3–5 authentic quotes, mark **Featured** for homepage
+- [ ] **Maa Nanda Devi copy** — synced from live site; review logistics fields in Sanity
+- [ ] **Testimonials** — old site “Whispers from Past Journeys” was a **photo carousel only** (no written quotes). In `/studio` → Testimonial: add name, quote, photo, mark **Featured**. Reference photos from live site:
+  - Hiker resting on stone wall
+  - Hiker in blue jacket on snowy trail (`IMG_2788.jpg`)
+  - Cyclist meditating on mountain road
+  - Traveler resting with dog in rhododendron hills
 - [ ] **Founder portrait** — upload to About in Sanity
 - [ ] **Social links** — Instagram, YouTube, Pinterest in Site Settings
 - [ ] **Instagram highlights** — Site Settings → Instagram Highlights (post URLs + captions)

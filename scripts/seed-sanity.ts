@@ -215,7 +215,11 @@ async function seedStoryDocs() {
 }
 
 async function seedTestimonialDocs() {
-  console.log("→ Testimonials (2)");
+  console.log(`→ Testimonials (${seedTestimonials.length})`);
+  if (seedTestimonials.length === 0) {
+    console.log("   · skipped — add quotes + photos in /studio (old site had image carousel only)");
+    return;
+  }
   for (const t of seedTestimonials) {
     console.log(`   · ${t.name}`);
     await upsert({

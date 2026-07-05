@@ -185,7 +185,7 @@ export default async function HomePage() {
             align="center"
             eyebrow="Begin"
             title="If a journey is calling you"
-            description="The mountains are waiting. So is a conversation."
+            description="If something here resonates with you, we will be happy to talk."
           />
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button asChild size="lg">

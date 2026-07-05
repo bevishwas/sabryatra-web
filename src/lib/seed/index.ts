@@ -29,8 +29,7 @@ const unsplash = (id: string, alt: string) =>
 export const seedSiteSettings: SiteSettings = {
   siteTitle: "Sabryatra",
   tagline: "Journeys that take you within",
-  introText:
-    "Sabryatra is a way of experiencing the world deeply — through cinematic travel storytelling, slow mountain journeys, and photography that leaves room for silence, breath, and stillness.",
+  introText: "Sabryatra is a way of experiencing the world deeply.",
   contactEmail: "journeys@sabryatra.com",
   phone: "+91-9414856201",
   whatsappNumber: "+919414856201",
@@ -49,6 +48,7 @@ export const seedSiteSettings: SiteSettings = {
   heroHeadlines: [
     "Journeys that take you within",
     "Sabryatra is a way of experiencing the world deeply.",
+    "Journeys that leave room for silence, for breath, for moments of stillness.",
     "Because how you move through the world shapes the world within you.",
   ],
   pillars: ["Small Group", "Slow Travel", "Designed For You", "Wellness Oriented"],
@@ -64,7 +64,7 @@ export const seedAbout: About = {
   founderName: "Vishal",
   pullQuote: "Guiding small groups into landscapes that invite both exploration and quiet reflection.",
   bio: block(
-    "Sabryatra began as a personal way of moving through the world — slowly, attentively, with a sense of wonder. Over time, it became something I wanted to share. Through photography, through stillness, through journeys that are not rushed. I'm Vishal, and I share space for these experiences — guiding small groups into landscapes that invite both exploration and quiet reflection. Sabryatra is that shared journey.",
+    "Sabryatra began as a personal way of moving through the world — slowly, attentively, with a sense of wonder. Over time, it became something I wanted to share. Through photography, through stillness, through journeys that are not rushed. I'm Vishal, and I share space for these experiences — guiding small groups into landscapes that invite both exploration and quiet reflection. Sabryatra is that shared journey. And somewhere along the way, these journeys stayed with others too.",
   ),
   portrait: unsplash(
     "photo-1507003211169-0a1dd7228f2d?w=800",
@@ -185,12 +185,12 @@ export const seedJourneys: Journey[] = [
     _id: "journey-maa-nanda-devi",
     title: "Maa Nanda Devi",
     slug: "maa-nanda-devi",
-    subtitle: "Walk this path of Devotion | Wilderness | Grace",
-    themes: ["Devotion", "Wilderness", "Grace"],
+    subtitle: "Walk this path of Devotion | Gratitude | Reverence",
+    themes: ["Devotion", "Gratitude", "Reverence"],
     excerpt:
-      "A pilgrimage into the sacred presence of Nanda Devi — where the Himalaya hold both wilderness and grace in equal measure.",
+      "Nanda Devi is the daughter of the Himalayas and protector of Garhwal–Kumaon — a presence you approach with permission, not conquest.",
     body: block(
-      "Maa Nanda Devi is not merely a peak — she is a presence. For centuries, pilgrims and wanderers have felt her gaze from valleys below, drawn not by conquest but by devotion. The journey toward her domain moves through ancient forests, alpine meadows, and landscapes where the sacred and the wild are inseparable. Here, the mountains ask for reverence before they ask for effort. Every step carries the weight of stories told across generations — of goddesses, of guardians, of travellers who arrived with open hearts and left changed. To walk toward Nanda Devi is to walk inward as much as upward.",
+      "Nanda Devi is believed to be the manifestation of Goddess Nanda, a form of Parvati — the daughter of the Himalayas and protector of the Garhwal–Kumaon region. For the local communities, she isn't something you climb towards; she's someone you approach with permission. The mountain is treated like a home, not a conquest. Villagers traditionally say: \"Nanda Devi allows you to see her only when she wishes.\" That's why she often remains hidden behind clouds, even on clear days.",
     ),
     heroImage: unsplash("photo-1464822759023-fed622ff2c3b", "Nanda Devi region Himalayan peaks — spiritual pilgrimage"),
     cardImage: unsplash("photo-1464822759023-fed622ff2c3b", "Maa Nanda Devi journey — Uttarakhand spiritual travel"),
@@ -252,24 +252,8 @@ export const seedStories: Story[] = [
   },
 ];
 
-export const seedTestimonials: Testimonial[] = [
-  {
-    _id: "testimonial-1",
-    name: "Priya S.",
-    quote:
-      "Sabryatra changed how I travel. No rushing, no checklist — just presence. The Kumaon journey stayed with me long after I returned home.",
-    journeySlug: "kumaon",
-    featured: true,
-  },
-  {
-    _id: "testimonial-2",
-    name: "Arjun M.",
-    quote:
-      "Vishal doesn't just guide you through mountains — he creates space for you to meet yourself. The Zanskar silence was transformative.",
-    journeySlug: "zanskar",
-    featured: true,
-  },
-];
+/** Old sabryatra.com "Whispers from Past Journeys" was a photo carousel only — no quote text. Add testimonials in /studio with photos + quotes. */
+export const seedTestimonials: Testimonial[] = [];
 
 export const seedGallery: GalleryImage[] = [
   {

@@ -84,7 +84,7 @@ You do **not** need to create every document by hand. Run the seed script:
    npm run seed:sanity
    ```
 
-This uploads all 5 journeys, 2 stories, testimonials, gallery images, site settings, and about page (with Unsplash placeholders). Safe to re-run — it replaces the same documents.
+This uploads all 5 journeys, 2 stories, gallery images, site settings, and about page (with Unsplash placeholders). Testimonials are not seeded — add them in `/studio`. Safe to re-run — it replaces the same documents.
 
 After seeding, open `/studio` to review. Replace placeholder photos with real ones before launch.
 
@@ -107,7 +107,7 @@ After seeding, open `/studio` to review. Replace placeholder photos with real on
 Before DNS cutover, provide:
 
 - [ ] **Maa Nanda Devi** — confirm/edit journey copy in Sanity
-- [ ] **Testimonials** — 3–5 real quotes with names (replace seed testimonials)
+- [ ] **Testimonials** — add in `/studio` with photos + quotes (old site carousel had images only)
 - [ ] **High-res photos** — 1 hero + 8–12 gallery images per journey (1920px+ wide)
 - [ ] **Founder portrait** — professional photo for About page
 - [ ] **Journey logistics** — duration, season, group size (optional fields in Sanity)
