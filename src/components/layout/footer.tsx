@@ -67,9 +67,20 @@ export async function Footer() {
         </Container>
       </Section>
       <div className="border-t border-white/10">
-        <Container className="flex flex-col items-center justify-between gap-3 py-6 text-[11px] uppercase tracking-[0.14em] text-white/40 sm:flex-row">
-          <span>© {new Date().getFullYear()} Sabryatra</span>
-          <span>Journeys that take you within</span>
+        <Container className="flex flex-col items-center justify-between gap-3 py-6 text-[11px] tracking-[0.14em] text-white/40 sm:flex-row">
+          <span className="uppercase">© {new Date().getFullYear()} Sabryatra</span>
+          <span className="uppercase">Journeys that take you within</span>
+          <span className="normal-case">
+            Design &amp; development by{" "}
+            <a
+              href="https://bevishwas.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/55 transition-colors hover:text-white"
+            >
+              Vishwas Vaishnav
+            </a>
+          </span>
         </Container>
       </div>
       <FooterTabPad />
