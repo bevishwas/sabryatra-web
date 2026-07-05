@@ -17,7 +17,7 @@ export default async function StoriesPage() {
   const stories = await getStories();
 
   return (
-    <Section className="pt-24 md:pt-28">
+    <Section className="pt-28 md:pt-32">
       <Container>
         <SectionHeader
           eyebrow="Field Notes"

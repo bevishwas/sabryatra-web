@@ -57,8 +57,9 @@ export default async function JourneyDetailPage({ params }: { params: Promise<{ 
           <SanityImageComponent image={journey.heroImage} fill priority sizes="100vw" />
         )}
         <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.15)_100%)]" />
-        <Container className="relative z-10 pb-[calc(5.5rem+env(safe-area-inset-bottom))] pt-24 md:pb-16 md:pt-36">
+        <Container className="relative z-10 pb-14 pt-24 md:pb-16 md:pt-36">
           <Breadcrumbs
+            variant="onDark"
             items={[
               { label: "Home", href: "/" },
               { label: "Journeys", href: "/journeys" },
@@ -80,7 +81,7 @@ export default async function JourneyDetailPage({ params }: { params: Promise<{ 
               <div className="space-y-5 lg:sticky lg:top-28">
                 <SampleDayTimeline moments={sampleDay} />
                 <JourneyDetailsPanel journey={journey} />
-                <Button asChild variant="whatsapp" className="w-full">
+                <Button asChild variant="whatsapp" className="hidden w-full md:inline-flex">
                   <a
                     href={buildWhatsAppUrl(buildJourneyInquiryMessage(journey.title))}
                     target="_blank"

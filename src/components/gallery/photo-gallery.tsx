@@ -53,7 +53,7 @@ export function PhotoGallery({ images }: { images: SanityImage[] }) {
 
       {active !== null && (
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 p-4 md:p-8"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-[max(1rem,env(safe-area-inset-top))] md:px-8"
           onClick={close}
           role="dialog"
           aria-modal
@@ -62,7 +62,7 @@ export function PhotoGallery({ images }: { images: SanityImage[] }) {
           <button
             type="button"
             onClick={close}
-            className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center text-white/70 transition-colors hover:text-white md:right-8 md:top-8"
+            className="absolute right-4 top-[max(1rem,env(safe-area-inset-top))] z-10 flex h-11 w-11 items-center justify-center text-white/70 transition-colors hover:text-white md:right-8"
             aria-label="Close"
           >
             <X className="h-5 w-5" />
@@ -76,7 +76,7 @@ export function PhotoGallery({ images }: { images: SanityImage[] }) {
                   e.stopPropagation();
                   prev();
                 }}
-                className="absolute left-2 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center text-white/70 hover:text-white md:left-6"
+                className="absolute left-2 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center text-white/70 hover:text-white md:left-6"
                 aria-label="Previous image"
               >
                 <ChevronLeft className="h-6 w-6" />
@@ -87,7 +87,7 @@ export function PhotoGallery({ images }: { images: SanityImage[] }) {
                   e.stopPropagation();
                   next();
                 }}
-                className="absolute right-2 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center text-white/70 hover:text-white md:right-6"
+                className="absolute right-2 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center text-white/70 hover:text-white md:right-6"
                 aria-label="Next image"
               >
                 <ChevronRight className="h-6 w-6" />

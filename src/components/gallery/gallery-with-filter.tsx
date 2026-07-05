@@ -26,7 +26,7 @@ export function GalleryWithFilter({
 
   return (
     <div>
-      <div className="mb-8 flex flex-wrap gap-2">
+      <div className="-mx-4 mb-8 flex gap-2 overflow-x-auto px-4 pb-1 scroll-smooth [scrollbar-width:none] max-md:snap-x max-md:snap-mandatory md:mx-0 md:flex-wrap md:overflow-visible md:px-0 [&::-webkit-scrollbar]:hidden">
         <FilterChip active={active === "all"} onClick={() => setActive("all")} label="All" />
         {journeys.map((j) => (
           <FilterChip
@@ -69,7 +69,7 @@ function FilterChip({
       type="button"
       onClick={onClick}
       className={cn(
-        "border px-3 py-1.5 text-[11px] font-medium uppercase tracking-[0.12em] transition-colors",
+        "border px-3 py-2 text-[11px] font-medium uppercase tracking-[0.12em] transition-colors max-md:shrink-0 max-md:snap-start",
         active
           ? "border-foreground bg-foreground text-background"
           : "border-border bg-surface text-muted hover:border-foreground/30 hover:text-foreground",

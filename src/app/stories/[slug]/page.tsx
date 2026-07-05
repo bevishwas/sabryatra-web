@@ -41,6 +41,7 @@ export default async function StoryDetailPage({ params }: { params: Promise<{ sl
         <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.15)_100%)]" />
         <Container className="relative z-10 pb-14 pt-28 md:pb-16 md:pt-36">
           <Breadcrumbs
+            variant="onDark"
             items={[
               { label: "Home", href: "/" },
               { label: "Stories", href: "/stories" },

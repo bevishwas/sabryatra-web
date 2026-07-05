@@ -10,7 +10,7 @@ export function JourneyCard({ journey, featured = false }: { journey: Journey; f
       href={`/journeys/${journey.slug}`}
       className={cn(
         "group relative block overflow-hidden bg-foreground",
-        featured ? "min-h-[520px] lg:col-span-2 lg:row-span-2 lg:min-h-[640px]" : "min-h-[420px]",
+        featured ? "min-h-[440px] lg:col-span-2 lg:row-span-2 lg:min-h-[640px]" : "min-h-[360px] md:min-h-[420px]",
       )}
     >
       <SanityImageComponent
